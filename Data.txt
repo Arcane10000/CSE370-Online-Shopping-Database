@@ -1,0 +1,74 @@
+INSERT INTO Employee VALUES
+('00001','Ahmed Zarir',100000,'CEO',NULL),
+('00002','Atif Ronan',35000,'Inventory Manager','00001'),
+('00003','Asif Ali',75000,'Manager','00001'),
+('00004','Sultanul Arefin',1000,'Security Guard','00001'),
+('00005','Shaolin Mostafiz',50000,'Model','00001'),
+('00006','Naomi Puchki',20000,'Chef','00001'),
+('00007','Rafid Saddam',15000,'Staff','00001'),
+('00008','Sajid Saleh',70000,'Accountant','00001'),
+('00009','Nafiun Alamin',69000,'Designer','00001'),
+('00010','Nusaiba Zaman',60000,'Photographer','00001');
+
+INSERT INTO Customer VALUES
+('100001','Joshim','joshboy@gmail.com','01911111111',2,'Uttara','00002'),
+('100002','Rahim','rahim@gmail.com','01923457890',3,'Cantonment','00002'),
+('100003','Karim','karim@gmail.com','01911567811',4,'Gulshan','00003'),
+('100004','Fahim','fahim@gmail.com','01555115623',17,'Banani','00002'),
+('100005','Rafim','rafim@yahoo.com','01692111134',13,'Mirpur','00003'),
+('100006','Jim','jim@hotmail.com','01876543219',6,'Mohammadpur','00003'),
+('100007','Kim','kim@gmail.com','01755545507',23,'Dhanmondi','00010'),
+('100008','Mim','mim@gmail.com','01568537469',15,'Bailey Road','00005'),
+('100009','Him','him@gmail.com','01796547479',5,'Mohakhali','00003'),
+('100010','Dim','Dim12dojon@gmail.com','01824242691',1,'Bashundhara','00003');
+
+INSERT INTO Supplier VALUES
+('1201','Lamia Lamlam'),
+('1202','Rusab Arif'),
+('1203','Mashnoon Ishan'),
+('1204','Rakibul Alam'),
+('1205','Fabian Jalae'),
+('1206','Fardeen Rahman'),
+('1207','Mehrab Hasan'),
+('1208','Andalif Karim'),
+('1209','Ajmain Mahtab'),
+('1210','Anjishnu Banik');
+
+INSERT INTO Product VALUES
+('13001','Ralph Polo-Black',990,35,'1201'),
+('13002','Ralph Polo-Maroon',1090,50,'1202'),
+('13003','Ralph Polo-White',990,35,'1203'),
+('13004','Ralph Lauren Sweater-Maroon',1690,100,'1204'),
+('13005','Ralph Lauren Sweater-Black',1590,35,'1205'),
+('13006','Ralph Lauren Sweater-White',1590,35,'1206'),
+('13007','Ralph Lauren Sweater-Grey',1590,35,'1207'),
+('13008','Ralph Lauren Sweater-Navy',1590,35,'1208'),
+('13009','Ralph Lauren Jumper-BLack',1090,35,'1209'),
+('13010','Ralph Lauren Jumper-Maroon',1090,35,'1210');
+
+INSERT INTO onlineshopping.order VALUES
+('000000001','2024-04-24','Sent','100009','00003'),
+('000000002','2024-04-24','Sent','100002','00002'),
+('000000003','2024-04-24','Sent','100003','00003'),
+('000000004','2024-04-24','Sent','100001','00002'),
+('000000005','2024-04-24','Sent','100004','00002'),
+('000000006','2024-04-24','Sent','100005','00003'),
+('000000007','2024-04-24','Sent','100006','00003'),
+('000000008','2024-04-24','Sent','100007','00010'),
+('000000009','2024-04-24','Sent','100008','00005'),
+('000000010','2024-04-24','Sent','100009','00003');
+
+insert into onlineshopping.orderinfo values
+	('OI000000001', 3 , '000000001', '13001'),
+    ('OI000000002', 2 , '000000001', '13005'),
+    ('OI000000003', 1 , '000000001', '13002'),
+    ('OI000000004', 1 , '000000002', '13007'),
+    ('OI000000005', 4 , '000000002', '13010'),
+    ('OI000000006', 1 , '000000003', '13004'),
+    ('OI000000007', 2 , '000000004', '13008'),
+    ('OI000000008', 1 , '000000005', '13007'),
+    ('OI000000009', 4 , '000000006', '13007'),
+    ('OI000000010', 3 , '000000007', '13005'),
+    ('OI000000011', 2 , '000000008', '13004'),
+    ('OI000000012', 1 , '000000009', '13002'),
+    ('OI000000013', 3 , '000000010', '13006');
